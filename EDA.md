@@ -119,12 +119,45 @@ purchased by consumers. We can distinct three main cathegories: beauty products,
 Are there any products with a disproportionately high percentage of 5-star ratings?
 ### Query
 ````sql
-
+SELECT TOP 20 LEFT(title, 
+		CASE
+		WHEN CHARINDEX(',', title + ',') > 0 THEN CHARINDEX(',', title + ',') - 1
+		WHEN CHARINDEX('-', title + '-') > 0 THEN CHARINDEX('-', title + '-') - 1
+		ELSE LEN(title) END) AS title, 
+		ROUND((starsBreakdown_5star * 100), 2) AS perc_5star
+FROM   best_sellers
+WHERE  starsBreakdown_5star > .9
+ORDER BY perc_5star DESC;
 ````
 ### Results
-
+| title                                                                                          | perc_5star |
+| ---------------------------------------------------------------------------------------------- | ---------- |
+| Hershys Milk Chocolate Hearts Bar 2.5oz                                                        | 100        |
+| FINGOOO 72 Pcs Valentine's Day Plastic Treat Bags                                              | 100        |
+| Hershys Milk Chocolate Candy Valentines Day Gift                                               | 100        |
+| Weflye 28 Pack Valentines Day gifts Cards with Invisible Ink Pen                               | 100        |
+| Valentines Day Gifts Cards For Kids: 28 Pack Valentine Party Favors Dinosaur Unicorn Keychains | 100        |
+| Valentines Day Gifts For Dog Mom & Dad                                                         | 100        |
+| Valentines Day Gifts                                                                           | 100        |
+| 24 Packs Valentines Day Cards for Kids with Fastfood Building Blocks                           | 100        |
+| AISunGoo 30 Pcs Valentines Day Gift Bags with Cards for Kids Classroom Parties                 | 100        |
+| 32pcs Valentines Day Gifts for Kids - Valentines with Mini Pop Fidget Toys Bulk                | 100        |
+| Shemira 24 Packs Valentine's Day Cards for Kids                                                | 100        |
+| Valentines Day Flowers Roses Gifts for Her                                                     | 95         |
+| LEGO Icons Wildflower Bouquet Botanical Collection Building Set for Adults                     | 94         |
+| Cheerin Valentines Day Card with Envelope                                                      | 93         |
+| LEGO Icons Flower Bouquet Building Decoration Set - Artificial Flowers with Roses              | 92         |
+| GIFTINBOX 28 Pack Valentines Day Gifts for Kids Classroom                                      | 92         |
+| Jinsome 32 Pack Valentine's Day Heart-Shaped Pop Fidget Toys for Kids                          | 91         |
 
 ### Findings
+There are 11 product with a perfect 10% 5 stars reviews. 
+</br>
+
+. </br>
+. </br>
+. </br>
+⚠️ More analysis to come ❗ 
 __________________________________________________________
 
 
