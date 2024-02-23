@@ -1,7 +1,7 @@
 # 2024 Valentine's Amazon Bestsellers
 
 I appreciate all ⭐ 
-Thank you:exclamation: 
+Thank you 💙
 
 **Author**: Mal Sikora <br />
 **Email**: sikoramald@gmail.com <br />
@@ -9,12 +9,14 @@ Thank you:exclamation:
 **LinkedIn**: https://www.linkedin.com/in/mal-sikora/  <br />
 
 ## Introduction
-A SQL analysis of 2024 best-selling Valentine's day gift items on Amazon. 
-<u>Using:</u> SQL Server (SSMS)
-<u>SQL language:</u> T-SQL 
+A SQL analysis of 2024 best-selling Valentine's day gift items on Amazon. </br>
 
-* . -- exploratory data analysis
-* . -- example of questions and findings
+[!Important]
+Used: SQL Server (SSMS) </br>
+SQL language: T-SQL </br>
+
+* . <! -- exploratory data analysis -->
+* . <! -- example of questions and findings -->
   
 * [Data Analysis Question & Answers](./questions_and_answers.md)
 
