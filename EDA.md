@@ -19,8 +19,7 @@ SELECT TOP 10 LEFT(title,
 FROM best_sellers
 ````
 ### Results
- Outer pipes  Cell padding 
-No sorting
+
 | title                                                                                | brand          | nr_3stars | nr_4stars | nr_5stars |
 | ------------------------------------------------------------------------------------ | -------------- | --------- | --------- | --------- |
 | Ferrero Rocher                                                                       | Ferrero Rocher | 400.4     | 1401.5    | 17818.7   |
