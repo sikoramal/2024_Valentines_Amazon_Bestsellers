@@ -14,11 +14,8 @@ A SQL analysis of 2024 best-selling Valentine's day gift items on Amazon. </br>
 ℹ️ **_Note_** </br>
 Used: SQL Server (SSMS) </br>
 SQL language: T-SQL </br>
-
-*  <!-- exploratory data analysis -->
-*  <!-- example of questions and findings -->
-  
-<!-- * [Data Analysis Question & Answers](./questions_and_answers.md) -->
+* [Exploratory Data Analysis](./EDA.md)
+* [Deep Dive Into the Dataset](./Deep_Dive.md)
 
 ## Datasets files
 This case study uses: 
