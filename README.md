@@ -11,16 +11,17 @@ Thank you 💙
 ## Introduction
 A SQL analysis of 2024 best-selling Valentine's day gift items on Amazon. </br>
 
-[!Important]
+ℹ️ **_Note_** </br>
 Used: SQL Server (SSMS) </br>
 SQL language: T-SQL </br>
 
-* . <! -- exploratory data analysis -->
-* . <! -- example of questions and findings -->
+*  <!-- exploratory data analysis -->
+*  <!-- example of questions and findings -->
   
-* [Data Analysis Question & Answers](./questions_and_answers.md)
+<!-- * [Data Analysis Question & Answers](./questions_and_answers.md) -->
 
 ## Datasets files
-Used [datasets](./source_data/csv/) for this case study
-- <strong> </strong>: amazon_2024_valentines_best_sellers.csv
+This case study uses: 
+<!-- Used [datasets](./source_data/csv/) for this case study
+- <strong> </strong>: amazon_2024_valentines_best_sellers.csv  -->
 
